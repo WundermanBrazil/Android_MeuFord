@@ -25,7 +25,7 @@ public class LoginActivity extends Activity {
 	 * TODO: remove after connecting to a real authentication system.
 	 */
 	private static final String[] DUMMY_CREDENTIALS = new String[] {
-			"foo@example.com:hello", "bar@example.com:world" };
+			"willian.lemos@gmail.com:123456", "willian.lemos@wunderman:123456" };
 
 	/**
 	 * The default email to populate the email field with.
