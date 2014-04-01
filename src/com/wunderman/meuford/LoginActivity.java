@@ -1,12 +1,14 @@
 package com.wunderman.meuford;
 
+import com.wunderman.meuford.util.SystemApplication;
+
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
-import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -19,7 +21,7 @@ import android.widget.TextView;
  * Activity which displays a login screen to the user, offering registration as
  * well.
  */
-public class LoginActivity extends Activity {
+public class LoginActivity extends FragmentActivity {
 	/**
 	 * A dummy authentication store containing known user names and passwords.
 	 * TODO: remove after connecting to a real authentication system.
@@ -51,7 +53,7 @@ public class LoginActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
+		SystemApplication.setActivity(this);
 		setContentView(R.layout.activity_login);
 
 		// Set up the login form.
@@ -73,7 +75,7 @@ public class LoginActivity extends Activity {
 					}
 				});
 
-		mLoginFormView = findViewById(R.id.login_form);
+		mLoginFormView = findViewById(R.id.loginForm);
 		mLoginStatusView = findViewById(R.id.login_status);
 		mLoginStatusMessageView = (TextView) findViewById(R.id.login_status_message);
 

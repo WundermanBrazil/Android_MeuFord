@@ -22,16 +22,16 @@ public class SplashActivity extends Activity implements Runnable {
 		super.onCreate(savedInstanceState);		
 		setContentView(R.layout.activity_splash);
 
-		SystemApplication.setActivity(this);
 		SystemApplication.validateLocale();
-		
+		SystemApplication.setActivity(this);
+				
 		Handler h = new Handler();
-		h.postDelayed(this, 3000);	
+		h.postDelayed(this, 3000);
 	}
 	
-	public void run(){	
-    	startActivity(new Intent().setClass(this, LoginActivity.class));
-    	finish();	
+	public void run(){
+    	startActivity(new Intent().setClass(this, ForgotPasswordActivity.class));
+		finish();
 	}
     
 	@Override
@@ -40,7 +40,6 @@ public class SplashActivity extends Activity implements Runnable {
 		super.onStart();
 	}
 		
-	
     @Override
 	public void onStop() {
 		super.onStop();

@@ -2,8 +2,9 @@
 <resources>
 
     <string name="app_name">Meu Ford</string>
-    <string name="title_activity_splash">SplashActivity</string>
+    <string name="content_description_logo_footer">Descrição do logo do footer</string>
+
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-
+    
 </resources>

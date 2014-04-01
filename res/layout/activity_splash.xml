@@ -1,8 +1,10 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ActivitySplash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_geral_footer"
-    tools:context="com.wunderman.meuford.SplashActivity" >
+    android:background="@drawable/splash_screen"
+    tools:context="com.wunderman.meuford.SplashActivity">
 
 </FrameLayout>
