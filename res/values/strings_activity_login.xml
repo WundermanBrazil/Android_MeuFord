@@ -1,27 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Strings related to login -->
-    <string name="login_progress_signing_in">Signing in&#8230;</string>
-    <string name="text_title_form_login">Insira seu e-mail e senha do site da Ford:</string>
-    <string name="prompt_email">e-mail</string>
-    <string name="prompt_password">senha</string>
-    <string name="action_sign_in_short">Entrar</string>
-    <string name="action_sign_in_register"><b>Entrar</b></string>
+    <string name="text_title_login_activity">Insira seu e-mail e senha do site da Ford:</string>
     <string name="description_forgot_password">Esqueci Minha Senha</string>
-    <string name="description_divider">Linha divisória</string>
-    <string name="question_register">Ainda não tem Login no site da Ford?</string>
-    <string name="text_register">Faça seu cadastro. É rápido e fácil!</string>
-    <string name="action_register">Cadastrar</string>
-    
-    
-    <string name="title_activity_login">Sign in</string>
-    <string name="action_forgot_password">Esqueci a senha</string>
-    <string name="error_invalid_email">O e-mail informado não é válido</string>
-    <string name="error_invalid_password">A senha informada não é válida</string>
-    <string name="error_incorrect_password">A senha informada está incorreta</string>
-    <string name="error_field_required">Campo obrigatório</string>
-    
-    
-    
-    
-    
+    <string name="text_register_login_activity">Ainda não tem Login no site da Ford?\nFaça seu cadastro. É rápido e fácil!</string>
 </resources>

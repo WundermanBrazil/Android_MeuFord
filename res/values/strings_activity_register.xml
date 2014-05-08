@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_screen_activity_register">Cadastro</string>
+    <string name="text_right_button_action_bar_activity_register">Cadastrar</string>
+    <string name="text_activity_register">Cadastre-se, você estará automaticamente concordando com os termos de uso da Ford.</string>
+    <string name="text_label_name_activity_register">Nome</string>
+    <string name="text_label_cpf_activity_register">CPF</string>
+    <string name="text_label_birth_activity_register">Nascimento</string>
+    <string name="text_label_email_activity_register">Email</string>
+    <string name="text_label_password_activity_register">Senha</string>
+    <string name="text_label_password_confirm_activity_register">Confirme a Senha</string>
+</resources>

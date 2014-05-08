@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">Meu Ford</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="prompt_name">Nome</string>
+    <string name="prompt_cpf">xxx.xxx.xxx-xx</string>
+    <string name="prompt_birth">xx/xx/xxxx</string>
+    <string name="prompt_email">e-mail</string>
+    <string name="prompt_password">senha</string>
+    <string name="text_button_sign_in">Entrar</string>
+    <string name="text_button_register">Cadastrar</string>
+    <string name="text_button_send">Enviar</string>
     <string name="content_description_logo_footer">Descrição do logo do footer</string>
-
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    
+    <string name="description_divider">Linha divisória</string>
+    <string name="error_invalid_email">O e-mail informado não é válido</string>
+    <string name="error_invalid_password">A senha informada não é válida</string>
+    <string name="error_incorrect_password">A senha informada está incorreta</string>
+    <string name="error_field_required">Campo obrigatório</string>
 </resources>

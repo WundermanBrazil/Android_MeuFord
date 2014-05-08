@@ -30,13 +30,14 @@ public class SplashActivity extends Activity implements Runnable {
 	}
 	
 	public void run(){
-    	startActivity(new Intent().setClass(this, ForgotPasswordActivity.class));
+		Intent intent = new Intent();
+		Intent screen = intent.setClass(this, LoginActivity.class);
+    	startActivity(screen);
 		finish();
 	}
     
 	@Override
 	protected void onStart() {
-		// TODO Auto-generated method stub
 		super.onStart();
 	}
 		

@@ -5,6 +5,7 @@ import com.wunderman.meuford.util.SystemApplication;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,8 +14,11 @@ import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.inputmethod.EditorInfo;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -86,6 +90,43 @@ public class LoginActivity extends FragmentActivity {
 						attemptLogin();
 					}
 				});
+		
+		
+		ImageView fotgotPassword = (ImageView)findViewById(R.id.forgotPassword);
+		fotgotPassword.setOnClickListener(
+				new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						onClickForgotPassword();
+					}
+				}
+		);
+		
+		Button btnRegister = (Button)findViewById(R.id.btnRegister);
+		btnRegister.setOnClickListener(
+				new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						onClickRegister();
+					}
+				}
+		);
+		
+		
+	}
+	
+	private void onClickForgotPassword()
+	{
+		Intent intent = new Intent();
+		Intent screen = intent.setClass(this, ForgotPasswordActivity.class);
+		startActivity(screen);
+	}
+	
+	private void onClickRegister()
+	{
+		Intent intent = new Intent();
+		Intent screen = intent.setClass(this, RegisterActivity.class);
+		startActivity(screen);
 	}
 
 	@Override
@@ -181,8 +222,7 @@ public class LoginActivity extends FragmentActivity {
 					.setListener(new AnimatorListenerAdapter() {
 						@Override
 						public void onAnimationEnd(Animator animation) {
-							mLoginFormView.setVisibility(show ? View.GONE
-									: View.VISIBLE);
+							mLoginFormView.setVisibility(show ? View.GONE : View.VISIBLE);
 						}
 					});
 		} else {

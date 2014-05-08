@@ -9,7 +9,6 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-
 import com.j256.ormlite.android.apptools.OpenHelperManager;
 
 public class SystemApplication extends Application {

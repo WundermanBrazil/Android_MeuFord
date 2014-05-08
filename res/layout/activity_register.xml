@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <fragment
+        android:id="@+id/fragmentActionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        class="com.wunderman.meuford.fragments.FragmentActionBar" />
+    
+    <fragment
+       	android:id="@+id/fragmentBottomMeuFord"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        class="com.wunderman.meuford.fragments.FragmentBottomBarLogo" />
+    
+    <!-- Content -->
+    <ScrollView
+        android:id="@+id/registerContentContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/fragmentActionBar"
+        android:layout_above="@id/fragmentBottomMeuFord"
+        android:background="@drawable/bg_geral">
+        
+        <LinearLayout
+        	android:id="@+id/registerContent"
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginRight="10dp"
+        	android:layout_marginLeft="10dp"
+        	android:layout_marginBottom="20dp">
+        	
+            <TableLayout
+	        	android:id="@+id/blockRegisterInformation1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_marginRight="10dp"
+	        	android:layout_marginLeft="10dp"        	
+	        	android:background="@drawable/bg_white_3">
+                              
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    
+                    <TextView
+		            	android:id="@+id/labelName"
+			        	android:layout_width="fill_parent"
+			        	android:layout_height="wrap_content"
+			        	android:text="@string/text_label_name_activity_register"
+			        	style="@style/Label" />
+                    
+                    <EditText
+                        android:id="@+id/Password"
+                        style="@style/InputWithBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_name"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                    
+                </TableRow>
+                
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    
+                    <TextView
+		            	android:id="@+id/labelCPF"
+			        	android:layout_width="fill_parent"
+			        	android:layout_height="wrap_content"
+			        	android:text="@string/text_label_cpf_activity_register"
+			        	style="@style/Label" />
+                    
+                    <EditText
+			            android:id="@+id/inputCPF"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:maxLines="1"
+				        android:singleLine="true"
+				        android:hint="@string/prompt_cpf"
+				        style="@style/InputWithBox" />
+                    
+                </TableRow>
+                
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    
+                    <TextView
+		            	android:id="@+id/labelBirth"
+			        	android:layout_width="fill_parent"
+			        	android:layout_height="wrap_content"
+			        	android:text="@string/text_label_birth_activity_register"
+			        	style="@style/Label" />
+                    
+                    <EditText
+			            android:id="@+id/inputBirth"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:maxLines="1"
+				        android:singleLine="true"
+				        android:hint="@string/prompt_birth"
+				        android:inputType="date"
+				        style="@style/InputWithBox" />		        
+                    
+                </TableRow>
+                
+            </TableLayout>
+            
+            <TableLayout
+	        	android:id="@+id/blockRegisterInformation2"
+		        android:orientation="vertical"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:layout_marginTop="20dp"
+		        android:layout_marginRight="10dp"
+	        	android:layout_marginLeft="10dp"
+	        	android:background="@drawable/bg_white_3">
+                
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    
+                    <TextView
+		            	android:id="@+id/labelEmail"
+			        	android:layout_width="fill_parent"
+			        	android:layout_height="wrap_content"
+			        	android:text="@string/text_label_email_activity_register"
+			        	style="@style/Label" />
+                    
+                    <EditText
+			            android:id="@+id/inputEmail"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:maxLines="1"
+				        android:singleLine="true"
+				        android:inputType="textEmailAddress"
+				        android:hint="@string/prompt_email"
+				        style="@style/InputWithBox" />
+                    
+                </TableRow>
+                
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    
+                    <TextView
+		            	android:id="@+id/labelPassword"
+			        	android:layout_width="fill_parent"
+			        	android:layout_height="wrap_content"
+			        	android:text="@string/text_label_password_activity_register"
+			        	style="@style/Label" />
+                    
+                    <EditText
+			            android:id="@+id/inputPassword"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:maxLines="1"
+				        android:singleLine="true"
+				        android:inputType="textPassword"
+				        android:hint="@string/prompt_password"
+				        style="@style/InputWithBox" />
+                    
+                </TableRow>
+                
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    
+                    <TextView
+		            	android:id="@+id/labelPasswordConfirm"
+			        	android:layout_width="fill_parent"
+			        	android:layout_height="wrap_content"
+			        	android:text="@string/text_label_password_confirm_activity_register"
+			        	style="@style/Label" />
+                    
+                    <EditText
+			            android:id="@+id/inputPasswordConfirm"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:maxLines="1"
+				        android:singleLine="true"
+				        android:inputType="textPassword"
+				        android:hint="@string/prompt_password"
+				        style="@style/InputWithBox" />
+                    
+                </TableRow>
+                
+            </TableLayout>
+            
+            <TextView
+            	android:id="@+id/txtRegisterActivity"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_gravity="top|center_horizontal"
+	        	android:text="@string/text_activity_register"
+	        	style="@style/TextBlockRegisterActivity" />
+        	
+        </LinearLayout>
+
+	</ScrollView>
+    
+</RelativeLayout>

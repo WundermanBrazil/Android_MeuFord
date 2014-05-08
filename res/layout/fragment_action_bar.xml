@@ -9,25 +9,28 @@
         
     <Button
         android:id="@+id/ActionBarButtonLeft"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:visibility="invisible" />
+        android:visibility="invisible"
+        style="@style/ButtonActionBar" />
     
     <TextView
         android:id="@+id/ActionBarText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" />
-    
+        android:layout_centerVertical="true"
+        style="@style/TitleActionBar" />
+
     <Button
         android:id="@+id/ActionBarButtonRight"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:visibility="invisible" />
-        
+        android:visibility="invisible"
+        style="@style/ButtonActionBar" />
+
 </RelativeLayout>
